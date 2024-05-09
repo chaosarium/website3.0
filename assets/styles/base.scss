@@ -1,10 +1,13 @@
 // Replace this with your own font imports!
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@200;300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 :root {
-  --font-body: "Source Sans Pro";
   --font-header: "Inter";
-  --font-mono: "Fira Code"
+  --font-body: "Source Sans 3";
+  --font-mono: "Fira Code";
 }
 
 // typography
@@ -53,7 +56,7 @@ p, ul, text, a, tr, td, li, ol, ul {
   font-family: var(--font-body);
   color: var(--gray);
   fill: var(--gray);
-  font-weight: revert;
+  font-weight: 380;
   margin: revert;
   padding: revert;
 }
@@ -206,6 +209,10 @@ ul.tags {
   font-size: 0.9rem;
 }
 
+strong {
+  font-weight: 600;
+}
+
 sup > a {
   text-decoration: none;
   padding: 0 0.1em 0 0.2em;
@@ -220,7 +227,7 @@ sup > a {
 
 a {
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   transition: all 0.2s ease;
   color: var(--secondary);
@@ -484,7 +491,7 @@ header {
     }
     
     & h3 > a {
-      font-weight: 700;
+      font-weight: 600;
       margin: 0;
       font-size: 0.8em;
     }

@@ -79,22 +79,22 @@ div.highlight {
 // headings
 
 h1 { 
-  font-size: 2.1em;
+  font-size: 1.60em;
   // margin-top: 1em; 
   font-weight: 800;
 }
 h2 { 
-  font-size: 1.8em;
+  font-size: 1.50em;
   // margin-top: 1em; 
   font-weight: 720;
 }
 h3 { 
-  font-size: 1.55em;
+  font-size: 1.40em;
   // margin-top: 1em; 
   font-weight: 680;
 }
 h4 { 
-  font-size: 1.35em;
+  font-size: 1.30em;
   // margin-top: 1em; 
   font-weight: 640;
 }
@@ -104,7 +104,7 @@ h5 {
   font-weight: 600;
 }
 h6 { 
-  font-size: 1.05em;
+  font-size: 1.10em;
   // margin-top: 1em; 
   font-weight: 560;
 }
@@ -124,13 +124,13 @@ body.about-creator article {
     font-size: 1.35em;
     margin-top: 1em; 
     font-weight: 720;
-    font-family: "Inter";
+    font-family: var(--font-header);
   }
   h3 { 
     font-size: 1.2em;
     margin-top: 1em; 
     font-weight: 500;
-    font-family: "Inter";
+    font-family: var(--font-header);
   }
 }
 body.resume article {
@@ -141,14 +141,14 @@ body.resume article {
     font-size: 1.35em;
     margin-top: 1em; 
     font-weight: 720;
-    font-family: "Inter";
+    font-family: var(--font-header);
     border-bottom: solid 2px var(--outlinegray);
   }
   .text-chunk > a > h3 { 
     font-size: 1.2em;
     margin-top: 1em; 
     font-weight: 500;
-    font-family: "Inter";
+    font-family: var(--font-header);
     border-bottom: solid 1px var(--outlinegray);
   }
   table {
@@ -241,11 +241,11 @@ div.portfolio-nav {
 
   line-height: 1.5;
 
-  font-family: "Inter";
+  font-family: var(--font-header);
   margin: 16px 0;
   color: var(--tertiary);
   a {
-    // font-family: "Inter";
+    // font-family: var(--font-header);
     font-weight: unset;
     text-decoration: none;
     background-color: var(--link-background-color);

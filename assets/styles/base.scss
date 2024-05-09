@@ -165,6 +165,23 @@ article {
         cursor: not-allowed;
       }
     }
+
+    &:not(.internal-link)[rel="noopener"] {
+      &::after {
+        // content: "↗";
+        font-family: var(--font-header);
+        font-weight: 400;
+        opacity: 50%;
+      }
+      transition: all 0.2s ease;
+    }
+    &:not(.internal-link)[rel="noopener"]:hover {
+      &::after {
+        opacity: 100%;
+      }
+      text-decoration: underline;
+      transition: all 0.2s ease;
+    }
   }
   
   & p {

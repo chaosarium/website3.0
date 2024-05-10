@@ -168,10 +168,11 @@ article {
 
     &:not(.internal-link)[rel="noopener"] {
       &::after {
-        // content: "↗";
+        content: "↗";
         font-family: var(--font-header);
         font-weight: 400;
         opacity: 50%;
+        color: inherit;
       }
       transition: all 0.2s ease;
     }
@@ -607,6 +608,15 @@ header {
     font-weight: 400;
     user-select: none;
   }
+}
+
+
+article ul:not(.section-ul):not(.tags), ol {
+  padding-left: 1.2em;
+}
+article ul:not(.section-ul):not(.tags) li::marker {
+  content: '‣ ';
+  font-family: var(--font-header);
 }
 
 #contact_buttons ul {

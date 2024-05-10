@@ -3,7 +3,7 @@
 {{$dashedurl := .Destination }} 
 {{$external := or (strings.HasPrefix $dashedurl "http") (strings.HasPrefix $dashedurl "mailto:")}}
 {{- if $external -}}
-<a href="{{ $dashedurl }}" rel="noopener">{{ .Text | safeHTML }}</a>
+<a href="{{ $dashedurl }}" rel="noopener" target="_blank" class="external-link">{{ .Text | safeHTML }}</a>
 {{- else -}}
 {{$trimmed := strings.TrimSuffix ".md" (.Destination | safeURL)}}
 {{$spacedurl := replace $trimmed "%20" " " }}
